@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Goodreads fetch pages",
+  "version": "1.0",
+  "description": "Fetch book pagecount from search on Goodreads.",
+  "content_scripts": [
+    {
+      "matches": ["*://www.goodreads.com/search*"],
+      "js": ["content.js"]
+    }
+  ]
+}
